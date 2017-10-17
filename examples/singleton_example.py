@@ -1,0 +1,60 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+# @Time    : 2017/10/17 11:25
+# @Author  : wangzz
+# @File    : singleton.py
+import sys
+
+sys.path.append('../design_patterns')
+
+import threading
+
+from design_patterns.singleton import singleton
+
+
+@singleton
+class A(object):
+    def __init__(self, x):
+        self.x = x
+
+    def go(self):
+        print self.x
+
+
+def worker():
+    a = A(1)
+    print 'a.id: ' + str(id(a)) + '\n'
+
+
+def singleton_simple_test():
+    a1 = A(1)
+    a2 = A(2)
+    print 'a1.x: ' + str(a1.x) + '\n'
+    print 'a2.x: ' + str(a2.x) + '\n'
+    print 'a1.id: ' + str(id(a1)) + '\n'
+    print 'a2.id: ' + str(id(a2)) + '\n'
+
+
+def singleton_concurrent_test():
+    task = []
+    for i in range(30):
+        t = threading.Thread(target=worker)
+        task.append(t)
+
+    for t in task:
+        t.start()
+
+    for t in task:
+        t.join()
+
+
+def test_singleton():
+    print '==== * singleton_concurrent_test * ===='
+    singleton_concurrent_test()
+
+    print '==== * singleton_simple_test * ===='
+    singleton_simple_test()
+
+
+if __name__ == '__main__':
+    test_singleton()
