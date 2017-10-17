@@ -44,14 +44,18 @@ class ModelDuck(Duck):
 
 
 if __name__ == '__main__':
+    duck = Duck()
+    duck.perform_fly()
+    duck.perform_quack()
+
     mallard_duck = MallardDuck()
     mallard_duck.perform_fly()
     mallard_duck.perform_quack()
 
     model_duck = ModelDuck()
     model_duck.perform_fly()
-    model_duck.set_fly_behavior(FlyNoWay())
+    model_duck.fly_behavior = FlyNoWay()
     model_duck.perform_fly()
     model_duck.perform_quack()
-    model_duck.set_quack_behavior(Quack())
+    model_duck.quack_behavior = Quack()
     model_duck.perform_quack()

@@ -15,17 +15,28 @@ class QuackBehavior(object):
 
 
 class Duck(object):
-    fly_behavior = FlyBehavior()
-    quack_behavior = QuackBehavior()
+    @property
+    def fly_behavior(self):
+        if not hasattr(self, '_fly_behavior'):
+            return FlyBehavior()
+        return self._fly_behavior
+
+    @fly_behavior.setter
+    def fly_behavior(self, fly_behavior):
+        self._fly_behavior = fly_behavior
+
+    @property
+    def quack_behavior(self):
+        if not hasattr(self, '_quack_behavior'):
+            return QuackBehavior()
+        return self._quack_behavior
+
+    @quack_behavior.setter
+    def quack_behavior(self, quack_behavior):
+        self._quack_behavior = quack_behavior
 
     def perform_fly(self):
         self.fly_behavior.fly()
 
     def perform_quack(self):
         self.quack_behavior.quack()
-
-    def set_fly_behavior(self, fly_behavior):
-        self.fly_behavior = fly_behavior
-
-    def set_quack_behavior(self, quack_behavior):
-        self.quack_behavior = quack_behavior
