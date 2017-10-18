@@ -9,6 +9,11 @@ Design Patterns In Python
 
 示例：examples/strategy_example.py
 
+## Observer Pattern（观察者模式）
+实现：design_patterns/observer.py
+
+示例：examples/observer_example.py
+
 ## Singleton Pattern（单例模式）
 实现：design_patterns/singleton.py
 
