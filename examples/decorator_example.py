@@ -4,6 +4,7 @@
 # @Author  : wangzz
 # @File    : decorator_example.py
 
+
 class Beverage(object):
     def __init__(self):
         self._description = 'Unknown Beverage'
