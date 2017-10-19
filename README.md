@@ -14,12 +14,12 @@ Design Patterns In Python
 
 示例：examples/observer_example.py
 
-## Singleton Pattern（单例模式）
-实现：design_patterns/singleton.py
-
-示例：examples/singleton_example.py
-
 ## Decorator Pattern（装饰者模式）
 实现：design_patterns/decorator.py
 
 示例：examples/decorator_example.py
+
+## Singleton Pattern（单例模式）
+实现：design_patterns/singleton.py
+
+示例：examples/singleton_example.py
