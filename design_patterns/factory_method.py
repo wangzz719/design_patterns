@@ -3,7 +3,7 @@
 
 """
 @author: wangzhizhao
-@contact: wangzhizhao@zhihu.com
+@contact: wzhizhao@gmail.com
 @file: factory_method.py
 @time: 2017/10/26
 """

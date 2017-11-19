@@ -3,7 +3,7 @@
 
 """
 @author: wangzhizhao
-@contact: wangzhizhao@zhihu.com
+@contact: wzhizhao@gmail.com
 @file: pizza_factory_example.py
 @time: 2017/11/19
 """

@@ -19,6 +19,16 @@ Design Patterns In Python
 
 示例：examples/decorator_example.py
 
+## Factory Pattern（工厂模式）
+### 工厂方法模式
+实现：design_patterns/factory_method.py
+
+示例：examples/pizza_factory_example.py
+### 抽象工厂模式
+实现：design_patterns/abstract_factory.py
+
+示例：examples/pizza_factory_example_2.py
+
 ## Singleton Pattern（单例模式）
 实现：design_patterns/singleton.py
 
