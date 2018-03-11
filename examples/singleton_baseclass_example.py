@@ -1,19 +1,23 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# @Time    : 2017/10/17 11:25
-# @Author  : wangzz
-# @File    : singleton.py
+
+"""
+@author: wangzhizhao
+@contact: wzhizhao@gmail.com
+@file: singleton_baseclass_example.py
+@time: 2018/3/12
+"""
+
 import sys
 
 sys.path.append('../design_patterns')
 
 import threading
 
-from design_patterns.singleton import singleton
+from design_patterns.singleton_baseclass import Singleton
 
 
-@singleton
-class A(object):
+class A(Singleton):
     def __init__(self, x):
         self.x = x
 

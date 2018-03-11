@@ -30,6 +30,20 @@ Design Patterns In Python
 示例：examples/pizza_factory_example_2.py
 
 ## Singleton Pattern（单例模式）
-实现：design_patterns/singleton.py
+### 基于装饰器
+实现：design_patterns/singleton_decorator.py
 
-示例：examples/singleton_example.py
+示例：examples/singleton_decorator_example.py
+
+### 基于继承
+实现：design_patterns/singleton_baseclass.py
+
+示例：examples/singleton_baseclass_example.py
+
+### 基于元类
+实现：design_patterns/singleton_metaclass.py
+
+示例：examples/singleton_metaclass_example.py
+
+### python 官方实现
+[Singleton](https://wiki.python.org/moin/PythonDecoratorLibrary#Singleton)
