@@ -33,14 +33,14 @@ class Squeak(QuackBehavior):
 
 class MallardDuck(Duck):
     def __init__(self):
-        self.fly_behavior = FlyWithWings()
-        self.quack_behavior = Quack()
+        self._fly_behavior = FlyWithWings()
+        self._quack_behavior = Quack()
 
 
 class ModelDuck(Duck):
     def __init__(self):
-        self.fly_behavior = FlyWithWings()
-        self.quack_behavior = Squeak()
+        self._fly_behavior = FlyWithWings()
+        self._quack_behavior = Squeak()
 
 
 if __name__ == '__main__':
