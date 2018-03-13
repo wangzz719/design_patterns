@@ -47,3 +47,8 @@ Design Patterns In Python
 
 ### python 官方实现
 [Singleton](https://wiki.python.org/moin/PythonDecoratorLibrary#Singleton)
+
+## Command Pattern（命令模式）
+实现：design_patterns/command_pattern.py
+
+示例：examples/command_pattern_example.py
