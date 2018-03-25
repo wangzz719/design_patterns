@@ -52,3 +52,12 @@ Design Patterns In Python
 实现：design_patterns/command_pattern.py
 
 示例：examples/command_pattern_example.py
+
+## Adapter Pattern （适配器模式）
+实现：design_patterns/adapter_pattern.py
+
+示例：examples/adapter_pattern_example.py
+
+## Facade Pattern （外观模式）
+
+示例：examples/facade_pattern_example.py
