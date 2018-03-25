@@ -8,6 +8,7 @@
 @time: 2018/3/25
 """
 
+
 class DvdPlayer(object):
     def on(self):
         print 'dvd player on'
@@ -21,11 +22,14 @@ class DvdPlayer(object):
     def off(self):
         print 'dvd player off'
 
+
 class Screen(object):
     def down(self):
         print 'screen down'
+
     def up(self):
         print 'screen off'
+
 
 class HomeTheaterFacade():
     def __init__(self, dvd_player, screen):

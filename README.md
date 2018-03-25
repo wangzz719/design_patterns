@@ -61,3 +61,8 @@ Design Patterns In Python
 ## Facade Pattern （外观模式）
 
 示例：examples/facade_pattern_example.py
+
+## Template Method Pattern （模板方法模式）
+实现：design_patterns/template_method.py
+
+示例：examples/template_method_example.py
