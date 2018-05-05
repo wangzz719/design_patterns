@@ -12,7 +12,9 @@
 class AbstractClass(object):
     # cannot be override by subclass
     def template_method(self):
-        pass
+        self.primitiveOperation1()
+        self.primitiveOperation2()
+        self.hook()
 
     # implement in subclass
     def primitiveOperation1(self):

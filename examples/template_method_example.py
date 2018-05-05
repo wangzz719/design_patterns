@@ -14,7 +14,7 @@ class CaffeineBeverageWithHook(object):
         self.boil_water()
         self.brew()
         self.pour_in_cup()
-        if self.customer_wants_Condiments():
+        if self.customer_wants_condiments():
             self.add_condiments()
 
     def brew(self):
@@ -29,7 +29,7 @@ class CaffeineBeverageWithHook(object):
     def pour_in_cup(self):
         print 'pouring into cup'
 
-    def customer_wants_Condiments(self):
+    def customer_wants_condiments(self):
         return True
 
 
@@ -40,7 +40,7 @@ class CoffeeWithHook(CaffeineBeverageWithHook):
     def add_condiments(self):
         print 'adding sugar and milk'
 
-    def customer_wants_Condiments(self):
+    def customer_wants_condiments(self):
         answer = self.get_user_input()
         if answer.lower().startswith('y'):
             return True
@@ -60,7 +60,7 @@ class TeaWithHook(CaffeineBeverageWithHook):
     def add_condiments(self):
         print 'adding lemon'
 
-    def customer_wants_Condiments(self):
+    def customer_wants_condiments(self):
         answer = self.get_user_input()
         if answer.lower().startswith('y'):
             return True

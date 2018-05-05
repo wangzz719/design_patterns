@@ -66,3 +66,10 @@ Design Patterns In Python
 实现：design_patterns/template_method.py
 
 示例：examples/template_method_example.py
+
+## Iterator Pattern （迭代器模式）
+实现：design_patterns/iterator_pattern.py
+
+## Composite Pattern （组合模式）
+实现：design_patterns/composite_pattern.py
+示例：examples/composite_pattern_example.py
