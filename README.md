@@ -72,4 +72,5 @@ Design Patterns In Python
 
 ## Composite Pattern （组合模式）
 实现：design_patterns/composite_pattern.py
+
 示例：examples/composite_pattern_example.py
