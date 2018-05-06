@@ -74,3 +74,9 @@ Design Patterns In Python
 实现：design_patterns/composite_pattern.py
 
 示例：examples/composite_pattern_example.py
+
+
+## State Pattern （状态模式）
+实现：design_patterns/state_pattern.py
+
+示例：examples/state_pattern_example.py
